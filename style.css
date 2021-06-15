@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.plus{
+    visibility: hidden;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    flex: 1;
+    text-align: center;
+}
+ ul{
+display: inline-block;
+list-style-type:none ;
+
+}
+ul li{
+    display: inline-block;
+    margin-left: 12px;
+    padding: 20px;
+
+}
+ ul li a:hover {
+    background-color: rgb(160, 208, 226);
+    -moz-border-radius: 45px;
+     -webkit-border-radius: 45px;
+     border-radius: 25px;
+    }
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-family:"Lucida Console", "Courier New", monospace;
+    font-size: 18px;
+
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    background: url('brooke-lark-pGM4sjt_BdQ-unsplash.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center bottom;
+}
+.btn{
+
+    color: #fff;
+    background-color: #000;
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+.btn::before{
+    content:'' ;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    clip-path:circle(0px at 50% 50%) ;
+    transition: 0.5s;
+
+}
+.btn:active::before{
+    clip-path: circle(100%);
+}
+h4{
+    top: 40px;
+    left: 58px;
+    position: relative;
+    font-size: 20px;
+}
+img{
+    top: 80px;
+    right: 60px;
+    position: relative;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+h1{
+
+    text-align: center ;
+    top:500px;
+left:250px;
+position: absolute;
+color: rgb(242, 247, 250);
+text-shadow:  0 0 4px black;
+font-family: cursive;
+
+}
+
+@media only screen and (max-width: 700px){
+
+
+.btn{
+
+    top: 510px;
+    left: 88px;
+}
+h1{
+
+    top: 240px;
+    left: 5px;
+
+    position: absolute;
+    color: rgb(242, 247, 250);
+    text-shadow: 0 0 4px black;
+    font-family: cursive;
+}
+h4{
+    top: 34px;
+    left: 197px;
+    position: absolute;
+    font-size: 20px
+}
+img{
+    top: -43px;
+    right: 20px;
+    position: relative;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+/* .menu.open ul li{
+padding: 0;
+margin: 0;
+} */
+.menu{
+    background-color: rgb(178, 217, 224);
+    display: block;
+margin: 0;
+
+
+
+padding: 8px;
+height: 225px;
+    width: 150px;
+   
+    clip-path: circle(20px at 30px 30px);
+    transition: all 0.3s ease-in-out;
+    }
+    /* ul{
+        padding: 2px;
+        margin: 0;
+    } */
+    ul li{
+        display: inline-block;
+        /* margin-left: 12px; */
+        padding: 8px;
+    }
+    .menu.open{
+         clip-path: circle(250px at 20px 20px); 
+      
+    }
+    .plus{
+        visibility: visible;
+        font-size: 30px;
+        background-color: rgb(14, 13, 13);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius:50% ;
+        text-align: center;
+        cursor: pointer;
+        }
+}
+
